@@ -23,7 +23,7 @@ Flags:   -PS - Syn, -PA - Ack, -PU - UDP, -PE
 --script -sC : NSE scripting
 
 <br>
-### Further Details and Usage:
+**Further Details and Usage:**
 <br>
 
 1. nmap --iflist  =displays IP/Mask for each device connected to NW
