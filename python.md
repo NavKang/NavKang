@@ -32,21 +32,21 @@ Practice as much python as you can. Build small basic programs and build on them
 *To become a good programmer, you must practice. This is the advice I live by, and to become a good programmer is my goal.*
 <br><hr>
 ### Python Useful    
-#### Create and Activate Virtual Enviroment:    
-
-python3 -m venv   <select dir name> <br> 
-
-. ./<name of virtual enviroment>/bin/activate  <br>
-----  
+#### Create and Activate Virtual Enviroment:<br>    
+  
++ python3 -m venv   <select dir name>
+--------  
++ . ./<name of virtual enviroment>/bin/activate
+--------
 
 ### Using Pydocs:
 
-pdoc3 <python file name>
-
-pdoc3 -html <.py name> ( can also do -pdf for output)
-
-file://home/<dirname>/<.py name>  --to access in browser
-
++ pdoc3 <python file name>
+--------
++ pdoc3 -html <.py name> ( can also do -pdf for output)
+--------
++ file://home/<dirname>/<.py name>  --to access in browser
+--------
 ----
 
 Make File:
