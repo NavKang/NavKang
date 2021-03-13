@@ -1,4 +1,4 @@
-Contents:
+#### Contents:
 
 1. System Information
 
@@ -29,18 +29,14 @@ Contents:
 14. Disk Usage
 
 15. Directory Navigation
+<br>
+#### Useful Linux Commands:
 
-Useful Linux Commands:
-
-​
-
-1 – SYSTEM INFORMATION
+##### 1 – SYSTEM INFORMATION
 
 -- Display Linux system information
 
 uname -a
-
- 
 
 -- Display kernel release information
 
@@ -101,10 +97,9 @@ w
 Whoami
 
  
+<br>
+##### 2 – HARDWARE INFORMATION
 
-2 – HARDWARE INFORMATION
-
-​
 
 -- Display messages in kernel ring buffer
 
@@ -165,8 +160,8 @@ hdparm -tT /dev/sda
 badblocks -s /dev/sda
 
  
-
-3 – PERFORMANCE MONITORING AND STATISTICS
+<br>
+##### 3 – PERFORMANCE MONITORING AND STATISTICS
 
 -- Display and manage the top processes
 
@@ -239,8 +234,8 @@ free -h
 watch df –h
 
  
-
-4 – USER INFORMATION AND MANAGEMENT
+<br>
+##### 4 – USER INFORMATION AND MANAGEMENT
 
 -- Display the user and group ids of your current user.
 
@@ -289,8 +284,8 @@ userdel john
 usermod -aG sales john
 
  
-
-5 – FILE AND DIRECTORY COMMANDS
+<br>
+##### 5 – FILE AND DIRECTORY COMMANDS
 
 -- List all files in a long listing (detailed) format
 
@@ -393,8 +388,8 @@ tail file
 tail -f file
 
  
-
-6 – PROCESS MANAGEMENT
+<br>
+##### 6 – PROCESS MANAGEMENT
 
 -- Display your currently running processes
 
@@ -461,8 +456,8 @@ fg
 fg n
 
  
-
-7 – FILE PERMISSIONS
+<br>
+##### 7 – FILE PERMISSIONS
 
  
 
@@ -485,8 +480,8 @@ fg n
         - = no access
 
  
-
-8 – NETWORKING
+<br>
+##### 8 – NETWORKING
 
 -- Display all network interfaces and ip address
 
@@ -559,8 +554,8 @@ wget http://domain.com/file
 netstat -nutlp
 
  
-
-9 – ARCHIVES (TAR FILES)
+<br>
+##### 9 – ARCHIVES (TAR FILES)
 
 -- Create tar named archive.tar containing directory.
 
@@ -597,8 +592,8 @@ tar cjf archive.tar.bz2 directory
 tar xjf archive.tar.bz2
 
  
-
-10 – INSTALLING PACKAGES
+<br>
+##### 10 – INSTALLING PACKAGES
 
 -- Search for a package by keyword.
 
@@ -642,9 +637,9 @@ make
 
 make install
 
-​
 
-11 – SEARCH FOR INFORMATION
+<br>
+##### 11 – SEARCH FOR INFORMATION
 
 -- Search for pattern in file
 
@@ -675,8 +670,8 @@ find /home/john -name 'prefix*'
 find /home -size +100M
 
  
-
-12 – SSH LOGINS
+<br>
+##### 12 – SSH LOGINS
 
 -- Connect to host as your local username.
 
@@ -695,8 +690,8 @@ ssh user@host
 ssh -p port user@host
 
  
-
-13 – FILE TRANSFERS
+<br>
+##### 13 – FILE TRANSFERS
 
 -- Secure copy file.txt to the /tmp folder on server
 
@@ -727,8 +722,8 @@ rsync -a /home /backups/
 rsync -avz /home server:/backups/
 
  
-
-14 – DISK USAGE
+<br>
+##### 14 – DISK USAGE
 
 -- Show free and used space on mounted filesystems
 
@@ -759,8 +754,8 @@ du -ah
 du –sh
 
  
-
-15 – DIRECTORY NAVIGATION
+<br>
+##### 15 – DIRECTORY NAVIGATION
 
 -- To go up one level of the directory tree.  (Change into the parent directory.)
 
