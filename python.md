@@ -33,12 +33,14 @@ Practice as much python as you can. Build small basic programs and build on them
 <br><hr>
 
 #### Python Useful  
-##### Create and Activate Virtual Enviroment: &nbsp;  
-1. python3 -m venv   <select dir name> &nbsp; 
+##### Create and Activate Virtual Enviroment: 
+---------------
+ python3 -m venv   <select dir name> 
 
-2. . ./<name of virtual enviroment>/bin/activate &nbsp; 
+ . ./<name of virtual enviroment>/bin/activate  
 
 Using Pydocs:
+---------------
 
 pdoc3 <python file name>
 
@@ -49,6 +51,7 @@ file://home/<dirname>/<.py name>  --to access in browser
 
 
 Make File:
+---------------
 
 make -- provides several options 
 
@@ -61,11 +64,12 @@ make test --runs tests
 
 
 Quick Tips in Python:
+---------------
 
 
 
 Separator - used in print function:
-
+---------------
         eg. print("N", "A", "V", sep="--")   result= N--A--V
 
         eg. print("Nav", "555", sep="@") result= nav@555
@@ -73,7 +77,7 @@ Separator - used in print function:
 
 
 Decimal places format:
-
+---------------
         eg. 458.541315 to 458.54
 
         print(f"{458.541315: .2f3")
@@ -81,7 +85,7 @@ Decimal places format:
 
 
 Create multiple strings from one input call:
-
+---------------
        eg. str1, str2, str3 = input("Enter three strings").split()
 
        print(str1, str2, str3)
