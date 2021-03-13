@@ -3,7 +3,7 @@
 [About Me]
 [Write Ups]
 [Cheat Sheets](https://github.com/NavKang/NavKang/blob/gh-pages/cheatsheets.md)
-[Charity Work]
+[Charity Work]()
 
 
 You can use the [editor on GitHub](https://github.com/NavKang/NavKang/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
