@@ -33,10 +33,10 @@ Practice as much python as you can. Build small basic programs and build on them
 <br><hr>
 
 #### Python Useful  
-##### Create and Activate Virtual Enviroment:  
-+ python3 -m venv   <select dir name>  
+##### Create and Activate Virtual Enviroment: &nbsp;  
+1. python3 -m venv   <select dir name> &nbsp; 
 
-+ . ./<name of virtual enviroment>/bin/activate  
+2. . ./<name of virtual enviroment>/bin/activate &nbsp; 
 
 Using Pydocs:
 
