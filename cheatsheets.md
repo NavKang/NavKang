@@ -1,5 +1,3 @@
-<input type="text" placeholder="Search..">
-
 #These link contain commands and also links for further reading       
 
 [Linux]()  
