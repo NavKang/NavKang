@@ -1,6 +1,6 @@
 ### These link contain commands and also links for further reading       
 
-[Linux]()  
+[Linux](linux.md)  
 [NMAP]()  
 [BurpSuite]()  
 [Netcat]()  
