@@ -2,7 +2,7 @@
 
 [About Me]
 [Write Ups]
-[Cheat Sheets]
+[Cheat Sheets](https://github.com/NavKang/NavKang/tree/gh-pages)
 [Charity Work]
 
 
