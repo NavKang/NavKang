@@ -1,5 +1,9 @@
-## Welcome to Nav Kangs Page
+## Welcome to Nav's Page
 
+[About Me]
+[Write Ups]
+[Cheat Sheets]
+[Charity Work]
 
 
 You can use the [editor on GitHub](https://github.com/NavKang/NavKang/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
