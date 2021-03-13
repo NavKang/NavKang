@@ -31,23 +31,22 @@ Practice as much python as you can. Build small basic programs and build on them
 
 *To become a good programmer, you must practice. This is the advice I live by, and to become a good programmer is my goal.*
 <br><hr>
-### Python Useful    
-#### Create and Activate Virtual Enviroment:<br>    
-  
-+ python3 -m venv   <select dir name>
---------  
-+ . ./<name of virtual enviroment>/bin/activate
---------
 
-### Using Pydocs:
+#### Python Useful  
+##### Create and Activate Virtual Enviroment:  
++ python3 -m venv   <select dir name>  
 
-+ pdoc3 <python file name>
---------
-+ pdoc3 -html <.py name> ( can also do -pdf for output)
---------
-+ file://home/<dirname>/<.py name>  --to access in browser
---------
-----
++ . ./<name of virtual enviroment>/bin/activate  
+
+Using Pydocs:
+
+pdoc3 <python file name>
+
+pdoc3 -html <.py name> ( can also do -pdf for output)
+
+file://home/<dirname>/<.py name>  --to access in browser
+
+
 
 Make File:
 
@@ -59,11 +58,11 @@ make prereqs -- auto pip installs libraries needed
 
 make test --runs tests
 
-​
+
 
 Quick Tips in Python:
 
-​
+
 
 Separator - used in print function:
 
@@ -71,7 +70,7 @@ Separator - used in print function:
 
         eg. print("Nav", "555", sep="@") result= nav@555
 
-​
+
 
 Decimal places format:
 
@@ -79,7 +78,7 @@ Decimal places format:
 
         print(f"{458.541315: .2f3")
 
-​
+
 
 Create multiple strings from one input call:
 
@@ -87,25 +86,25 @@ Create multiple strings from one input call:
 
        print(str1, str2, str3)
 
-​
+
 
 Check if a file is empty:
 
        eg. import OS; print(os.stat("test.txt").st_size==0
 
-​
+
 
 Python modules stored on computer:
 
        eg. import sys ; sys_path
 
-​
+
 
 Print per line:
 
       eg. print(end=' ')
 
-​
+
 
 String Functions:
 
@@ -115,7 +114,7 @@ String Functions:
 
              nums = "98765"
 
-​
+
 
 Find Text:
 
@@ -123,7 +122,7 @@ text.find("Navs")
 
 text.find("Site")
 
-​
+
 
 Validation Checks:
 
@@ -133,7 +132,7 @@ text.isdigits()
 
 nums.isdigit()
 
-​
+
 
 Concatenation:
 
@@ -141,7 +140,7 @@ Concatenation:
 
 '   '.join((text,numbers))
 
-​
+
 
 Case change:
 
@@ -149,19 +148,19 @@ text.upper()
 
 text.lower()
 
-​
+
 
 Splitting String:
 
 text.split('  ')
 
-​
+
 
 Substitution:
 
 text.replace("Navs", "Vans")
 
-​
+
 
 Stripping:
 
@@ -171,7 +170,7 @@ text.lstrip()
 
 text.strip()
 
-​
+
 
 Sequence Operations and Functions:
 
