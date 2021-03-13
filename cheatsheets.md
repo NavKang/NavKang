@@ -1,11 +1,11 @@
 ### These link contain commands and also links for further reading       
 
 [Linux](linux.md)  
-[NMAP]()  
+[NMAP](nmap.md)  
 [BurpSuite]()  
 [Netcat]()  
 [Powershell]()  
-[Command Prompt]()  
+[Command Prompt](cmd.md)  
 [SQLi]()  
 [XSS]()  
 [Python]()  
