@@ -10,10 +10,11 @@
 4. Tracert
 
 5. ARP & Whoami
-<br><hr>
+<br>
+<hr>
 #### Ifconfig:
 
-+ ipconfig = current confi  of installed IP stack
++ ipconfig = current config  of installed IP stack
 ------------
 + ipconfig /all = detailed config report
 ------------
