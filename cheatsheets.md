@@ -8,7 +8,7 @@
 [Command Prompt](cmd.md)  
 [SQLi]()  
 [XSS]()  
-[Python]()  
+[Python](python.md)  
 [HTTP Tools]()  
 [Metasploit]()  
 [Info Gathering]()  
