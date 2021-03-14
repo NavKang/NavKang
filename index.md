@@ -1,7 +1,7 @@
 ## Welcome to Nav's Page
 
 [About Me](aboutme.md)
-[Write Ups]{writeups.md)
+[Write Ups](writeups.md)
 [Cheat Sheets](cheatsheets.md)
 [Charity Work](charity.md)
 
