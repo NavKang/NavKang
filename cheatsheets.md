@@ -23,6 +23,7 @@
 [Enumeration]()  
 [OSCP]()  
 [Windows Info Gathering]()  
+[Web Languages](weblang.md)
 
 
 
