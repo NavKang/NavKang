@@ -12,7 +12,7 @@
 5. ARP & Whoami
 <br>
 <hr>
-#### Ifconfig:
+## Ifconfig:
 
 + ipconfig = current config  of installed IP stack
 ------------
@@ -21,7 +21,7 @@
 + ipconfig /displaydns = detailed DNS report
 ---------------------------------------------
 
-#### NetStat:
+## NetStat:
 
 + netstat = Displays active TCP connections and ports listening
 ------------
@@ -45,7 +45,7 @@
 Enables us to watch the traffic with this command
 ------------
 
-#### Ping:
+## Ping:
 
 
 + Verifies IP level connecivity to another TCP/IP computer by sending an ICMP.
@@ -55,7 +55,7 @@ Enables us to watch the traffic with this command
 + ping -n (no. of pings) -l (no of bytes) <ip> = ping using number of  echo counts and size of bytes
 ------------
 
-#### Tracert and route:
+## Tracert and route:
 
 + Tracert determines route to a destination by sending ICMP echo packets 
 in these packets, Tracert uses varying IP TTL values.
@@ -67,7 +67,7 @@ in these packets, Tracert uses varying IP TTL values.
 + route print = similar to netstat -r shows routing table
 ------------
 
-#### ARP & whoami:
+## ARP & whoami:
 
 
 + arp -a = Displays staticand dynamic entries to ARP cache table
