@@ -1,0 +1,506 @@
+Detailed Metasploit
+FTP: share files between client and server : 21
+
+======================================
+
+Auxiliary/Scanner modules:
+
++++++++++++++++
+
+ftp_login – brute force attack
+
+ftp_version – banner grabbing
+
+anonymous – anon log on
+
+ 
+
+Smb:  Shares of printers,directories: 445
+
+==================================
+
+Auxiliary/Scanner modules:
+
++++++++++++++++
+
+Smb_Version – probes target to see version
+
+smb_enumusers – once you have users, can start PW cracking against them.
+
+smb_enumshares – enumerates shares on target
+
+ 
+
+HTTP: port 80:
+
+====================
+
+Auxiliary/Scanner modules:
+
++++++++++++++++
+
+http/http_version – probes + retrieves version of web server  + other details
+
+http/backup_file – file left behind by admins
+
+http/dir_listing – interesting file of directories in root
+
+http/ssl – checks for weak / misconfigured SSL certs
+
+http/http_header – check if header is leaking out server & OS details
+
+http/robots_txt –looks for the robots.txt file
+
+ 
+
+Simple Mail Transfer Protocol: Port25
+
+============================
+
+Auxiliary/Scanner modules:
+
++++++++++++++++
+
+Smtp/smtp_enum - probes an SMTP server for version and users
+
+ 
+
+Secure Shell : Port 22  -remote admin over encrypted channel
+
+============================
+
+Auxiliary/Scanner modules:
+
++++++++++++++++
+
+Ssh/ssh_enumusers – probes SSH server for users
+
+Ssh/ssh_login – brute force attack
+
+Ssh/ssh_version – version and OS
+
+Ssh/detect_kippo – detects a ssh honeypot
+
+ 
+
+Domain Name System: Port 53
+
+============================
+
+Auxiliary modules:
+
++++++++++++++++
+
+Gather/dns_info –extract name server & mail record info
+
+ 
+
+SMTP : Port 161-162
+
+============================
+
+Auxiliary/Scanner modules:
+
++++++++++++++++
+
+Snmp_enum
+
+Snmp_enumshares
+
+Snmp_enumusers
+
+ 
+
+Remote Desktop Protocol : Port 3389
+
+============================
+
+Auxiliary/Scanner modules:
+
++++++++++++++++
+
+Rdp/ms12_020 –checks if vulnerable to the ms12_020 (RDP)
+
+ 
+
+Password Sniffing
+
+============================
+
+Auxiliary/modules:
+
++++++++++++++++
+
+Sniffer/psnuffle – looks for L7 protocols, can also import .pcap files into module.
+
+ 
+
+Advanced Search with Shodan – need API key
+
+============================
+
+Auxiliary/ modules:
+
++++++++++++++++
+
+Gather/shodan_search – search shodan
+
+​
+
+DATABASES:
+
+========================
+
+Msfdb init
+
+Db_status
+
+Service postgresql start
+
+​
+
+Importing Scans:
+
+========================
+
+Db_import <file path> – import from Nessus and Nmap
+
+Hosts – use command after nmap subnet scan to import results
+
+Services- use command with parameters for requested info example:       service –c name,info <ip address>
+
+ 
+
+ 
+
+Backing up the database:
+
+===================
+
+Db_export – exports all data to an external XML file
+
+                  For eg. Db_export –f xml <path>
+
+ 
+
+NMAP scans straight to DB:
+
+========================
+
+Db_nmap <command flags> <ip> - saves direct to DB
+
+ 
+
+Scanning using Nessus from msfconsole:
+
+===================================
+
+First must start---    deamon: /etc/init.d/nessusd start
+
+Once loaded and nessus started, must select policies to use.
+
+---See below:---
+
+Msf> nessus_policy_list –
+
+Msf> nessus_scan_new<policy_UUID>
+
+Msf> nessus_scan_launch<scan_id>
+
+ 
+
+To view report:
+
+Msf> nessus_report_vulns <scanID>
+
+ 
+
+​
+
+Vulnerability scanning with MS:
+
+============================
+
+​
+
+ 
+
+METERPRETER: - Uses in-memory DLL injection
+
+======================================
+
+Search –h   –searching for content
+
+ 
+
+Screen capture process:
+
+1-use PS command to list all processes and PIDs on target
+
+2- locate explorer.exe and jot down its PID
+
+3- migrate meterpreter to explorer.exe (migrate <PID>)
+
+4.load espia plug ( use espia)
+
+5. then screengrab ( screengrab)
+
+ 
+
+Keystroke Logging:
+
+========================
+
+Keyscan_start
+
+Keyscan_dump
+
+ 
+
+Dumping Hashes and cracking with JtR
+
+==============================
+
+Post/windows/gather/hashdump  - windows SAM dump
+
+--à
+
+Auxiliary/analyze/jtr_crack_fast  - to crack the sam dump to cleartext
+
+ 
+
+Shell Command
+
+=============
+
+Once exploited and gained meterpreter. Can use shell command to get command prompt access
+
+ 
+
+Meterpreter> shell 
+
+ 
+
+Priv Escalation
+
+==============
+
+First load an extension called priv
+
+Then use getsystem to escalate
+
+ 
+
+Use priv
+
+Get system
+
+ 
+
+Setting up FTPserver
+
+==================
+
+ 
+
+Set up own FTP server = use auxiliary/server/ftp
+
+Set root = set FTPROOT /root/.set/   ( using SET tool)
+
+​
+
+Msfvenom
+
+==========
+
+–list payloads: msfvenom -- list payloads
+
+-list encoders: msfvenom -- list encoders
+
+-list formats: msfvenom -- list formats         
+
+-list platforms: msfvenom – list platforms
+
+​
+
+Social Enginneering with Metasploit
+
+===============================
+
+ 
+
+Use SET – generate PDFs, infectious media drives etc
+
+ 
+
+Browser AutoPWN – works by user clicking on a specially crafted URL which then downloads the payload and connects to listener.
+
+​
+
+Web-App Scanning
+
+==============
+
+Use Metasploitable 2 – and access from any web browser
+
+ 
+
+Web App Scanning using WMAP
+
+=========================
+
+WMAP – powerful scanner
+
+Msf > load wmap
+
+Msf > wmap sites –a <ip>
+
+Msf > wmap_targets –t http:<site name>
+
+Msf > wmpa_targets –l
+
+ 
+
+ 
+
+Check which modules can be run against target by:
+
+Msf > wmap_run –t
+
+Msf > wmap_run –e  -run the actual test
+
+ 
+
+Msf > wmap_vulns – l   - to list vulns
+
+ 
+
+Auxiliaries for web app enumeration & scanning:
+
+==========================================
+
+Auxiliary/scanner/
+
++++++++++++++
+
+ 
+
+http/cert – checks if cert on web app is expired or  valid
+
+http/dir_scanner – checks for various directories
+
+ 
+
+http/enum_wayback –historical sites of target
+
+ 
+
+http/files-dir – checks for files left on server ( configs,PW files etc)
+
+ 
+
+http/http_login –brute forces login on app, if there is one
+
+ 
+
+http/options – checks for methods such as trace/ head which are enabled on the web app
+
+ 
+
+http/version – retrieves web app type and underlaying OS
+
+ 
+
+​
+
+Using Encoders,Encrypters,Packers
+
+============================
+
+ 
+
+Encoding – using iterations of Shikata_gai_na
+
+ 
+
+Using Packers and Encrypters
+
+==========================
+
+ 
+
+To make payload stealthy use encrypted self extracting achieve feature offered by utility called 7-zip
+
+ 
+
+Adding a password further protects from AV detectors
+
+​
+
+Timestomp: - one used on Meterpreter
+
+============
+
+Every file or folder has metadata associated to it, -created,accessed,deleted,edited etc.
+
+ 
+
+Meterpreter > timestomp
+
+ 
+
+To change file timestomp:
+
+Meterpreter > timestomp < filename> -c   <time/date>
+
+ 
+
+Clearev
+
+======
+
+All interactions with windows systems get recorded in event logger – application, security and system logs.
+
+Windows Event Viewer – stores and displays all events
+
+ 
+
+Meterpreter > clearev
+
+ 
+
+Metasploit Mixins & templates:
+
+=========================
+
+Can write your own zero day exploit and upload to metasploit using the template.
+
+ 
+
+ 
+
+Mixins – similar to Java classes, do not  need to rewrite long code, call classes to us (aka modules)
+
+ 
+
+To view the mixins to import for use:
+
+/usr/share/metasploit-framework/lib/msf/core/exploit
+
+​
+
+​
+
+Adding external exploits to Metasploit
+
+==================================
+
+ 
+
+Go to www.exploit-db.com – most trusted source
+
+Download the exploit, and cp to metasploit
+
+--/usr/share/metasploit-framework/modules/exploits/../...
+
+Then in msfconsole code, add command: reload all
